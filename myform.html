@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         body{
+            background-image: linear-gradient(100deg, #f608c7, #670902);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+
+        }
+        .container{
+            background-color: #5c5e5f;
+            width: 350px;
+            height: 410px;
+            padding: 20px 30px;
+            box-shadow: -4px -4px 8px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+    
+        }
+        input{
+            height: 30px;
+            width: 200px;
+            border-radius: 2px 5px;
+            color: black;
+    
+        }
+        
+        button{
+            height: 40px;
+            width: 120px;
+            border-radius: 2px 5px;
+            color: black;
+            background-color: #057205;
+            
+        }
+        h2{
+          text-shadow: 2px 5px 9px aqua;
+           
+            
+        }
+       
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <hr>
+        <form action="/register" method="POST" >
+
+            <input type="text" placeholder="Enter fullname" id="fullname" name="fullname" required><br><br>
+
+            <input type="email" placeholder="Enter Email"   id="email" name="email" required><br><br>
+            
+            <input type="password" placeholder="Enter Password"  id="password" name="password" required><br><br>
+            
+            <input type="password" placeholder="confirmpassword"  id="confirmpassword" name="confirmPassword" required><br><br>
+            
+            <button type="submit">Register</button>
+        </form>
+        <p><a  class="login" href="login.html" ></a></p>
+    </div>
+
+</body>
+</html>
